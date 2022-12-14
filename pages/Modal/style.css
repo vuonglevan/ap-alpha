@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 20, 50, 0.7);
+}
+
+
+.modal-content {
+    background: #FFFFFF;
+    border: 1px solid #B8BEC8;
+    border-radius: 10px;
+    margin: 15% auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.icon i {
+    margin: 65px auto 30px;
+    padding: 40px;
+    border-radius: 40px;
+    background: linear-gradient(102.14deg, #0867FF 0%, #002D87 100%);
+}
+
+.message {
+    font-weight: 500px;
+    font-size: 24px;
+    letter-spacing: 2%;
+    text-align: center;
+    align-items: center;
+    line-height: 38.4px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.button button {
+    width: 270px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+}
+
+.button button:nth-child(1) {
+    background-color: #AAAFB9;
+}
+
+.button button:nth-child(2) {
+    background: #0867FF;
+}
+
+
+@media (max-width: 375px) {
+    .modal-content {
+        margin: 50% 15px    ;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        padding: 15px;
+        width: calc(100% - 62px);
+    }
+
+    .message {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #001432;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .icon {
+        font-size: 60px;
+        color: white;
+        text-align: center;
+    }
+
+    .icon i {
+        margin: 65px auto 25px;
+        padding: 20px;
+        border-radius: 30px;
+        background: linear-gradient(102.14deg, #0867FF 0%, #002D87 100%);
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+
+    .button button {
+        width: 160px;
+        border: none;
+        color: white;
+        font-size: 16px;
+    }
+
+
+
+}

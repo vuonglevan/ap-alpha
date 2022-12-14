@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 375px;
+    box-sizing: border-box;
+    font-family: 'iCiel Graphik';
+}
+
+.page-title {
+    margin: 25px 0;
+}
+
+.page-title .title-step {
+    font-family: 'iCiel Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #8791A0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0 8px;
+}
+
+.title-step.icon {
+    display: none;
+}
+
+.title-step:nth-child(2),
+.title-step:nth-child(3) {
+    font-weight: 500;
+    border-right: 1px solid#AAAFB9;
+}
+
+.title-step:last-child {
+    color: #002D87;
+}
+
+
+/* contract-code */
+.contract-code-container {
+    overflow: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.contract-code {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contract-code .thead {
+    background-color: #002D87;
+    color: #fff;
+}
+
+.contract-code .tbody {
+    background-color: #0867FF;
+    color: #fff;
+    letter-spacing: 1%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.contract-code-item {
+    padding: 6px 10px;
+    font-weight: 400;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.tbody .contract-code-item {
+    padding: 14px 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+
+
+.contract-detail-months {
+    display: flex;
+    justify-content: start;
+}
+
+.month-item {
+    padding: 15px 30px;
+    justify-content: start;
+    color: #8791A0;
+    font-size: 16px;
+}
+
+.month-item:nth-child(1) {
+    padding: 15px;
+    color: white;
+    background-color: #AAAFB9;
+    font-weight: 600;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+.month-item:not(.month-item:nth-child(1)) {
+    border-right: 1px solid #AAAFB9;
+}
+
+
+
+
+
+
+
+
+
+.contract-detail {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.contract-detail .row td {
+    padding: 12px 16px;
+}
+
+.contract-detail .row td:nth-child(1) {
+    width: inherit;
+}
+
+.contract-detail-header .row .contract-detail-item:nth-child(1) {
+    text-align: left !important;
+}
+
+.contract-detail-header .row .contract-detail-item {
+    background-color: #AAAFB9;
+    padding: 12px 16px;
+    color: white;
+}
+
+.contract-detail-body .row td:not(.contract-detail-body .row td:first-child) {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.contract-detail-body .row {
+    color: #465564;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.contract-detail-body .total td {
+    font-weight: 500;
+    color: #002D87;
+}
+
+.contract-detail,
+th,
+td {
+    border: 1px solid #93969c;
+    border-collapse: collapse;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+        font-family: 'iCiel Graphik';
+    }
+
+    .contract-detail-months {
+        overflow: auto;
+    }
+
+    .title-step.icon {
+        display: inline;
+        font-size: 25px;
+        border: 1px solid #0867FF;
+        padding: 7px 10px;
+        border-radius: 50%;
+        color: #0867FF;
+    }
+
+    .title-step:nth-child(2),
+    .title-step:nth-child(3) {
+        display: none;
+    }
+
+    .title-step:last-child {
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
+    /* .contract-code-container  */
+    .contract-code-container {
+        border-radius: 8px;
+        margin-bottom: 7px;
+    }
+
+    .contract-code-item {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        font-size: 10px;
+    }
+
+    .contract-code-item:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+    }
+
+    .thead .contract-code-item:first-child {
+        background: #002D87;
+    }
+
+    .tbody .contract-code-item:first-child {
+        background: #0867FF;
+    }
+
+    .contract-detail-body .row,
+    .contract-detail-item {
+        font-size: 12px;
+    }
+
+    /* contract-detail-container */
+
+    .contract-detail-container {
+        border-radius: 8px;
+        overflow: auto;
+    }
+
+    .month-item:nth-child(1) {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        white-space: nowrap;
+
+    }
+
+    .month-item {
+        font-size: 10px;
+    }
+
+}
