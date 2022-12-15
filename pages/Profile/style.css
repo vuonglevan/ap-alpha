@@ -175,7 +175,8 @@ input:focus {
     background-color: #0867FF;
 }
 
-.btn-response {
+.btn-response,
+.logout-mobie {
     display: none;
 }
 
@@ -199,6 +200,22 @@ input:focus {
         z-index: 10;
     }
 
+    .logout-mobie {
+        display: block;
+        background-color: #fff;
+        text-align: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.02em;
+        border-radius: 16px;
+    }
+
+    .button.logout button {
+        margin: 0;
+    }
+
     .btn-response {
         display: block;
         width: 100%;
@@ -213,10 +230,16 @@ input:focus {
         font-size: 16px;
         line-height: 160%;
         letter-spacing: 0.02em;
+        border-radius: 16px;
+        padding: 25px;
+        background: #EEEFF1;
+        color: #465564;
+        margin-bottom: 10px;
     }
 
-    .btn-response {
-        width: 100%;
+    .btn-response.active {
+        background-color: #0867FF;
+        color: #fff;
     }
 
     .row {

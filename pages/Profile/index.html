@@ -9,8 +9,9 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <title>Profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,9 +28,10 @@
                     xuất</button></div>
         </div>
         <div class="row information" id="information">
-            <button class="js-btn active btn-response" data-target="#information"><i
-                    class="fa-regular fa-user"></i>Thông tin cá
-                nhân<i class="fa-solid fa-chevron-down"></i></button>
+            <button class="js-btn active btn-response" data-target="#information">
+                <div><i class="fa-regular fa-user"></i>Thông tin cá
+                    nhân</div><i class="fa-solid fa-chevron-down"></i>
+            </button>
             <div class="title">Thông tin cá nhân <span class="required">*</span></div>
             <form action="">
                 <div class="input-group">
@@ -61,7 +63,7 @@
             </form>
         </div>
         <div class="row change-password d-none" id="change-password">
-            <button class="js-btn active btn-response" data-target="#information"><i class="fa-solid fa-pencil"></i>Đổi
+            <button class="js-btn btn-response" data-target="#information"><i class="fa-solid fa-pencil"></i>Đổi
                 mật khẩu<i class="fa-solid fa-angle-up"></i></button>
             <div class="title">Đổi mật khẩu</div>
             <form action="">
@@ -86,6 +88,10 @@
                     <button>Xác nhận</button>
                 </div>
             </form>
+        </div>
+        <div class="row logout-mobie">
+            <div class="button logout"><button class=""><i class="fa-solid fa-right-from-bracket"></i>Đăng
+                    xuất</button></div>
         </div>
     </div>
     <script src="main.js"></script>
