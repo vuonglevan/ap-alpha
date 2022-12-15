@@ -70,9 +70,17 @@ label {
     margin-right: 15px;
 }
 
-.button button.active {
+.active button {
     color: white;
     background-color: #0867FF;
+}
+
+.content {
+    display: none;
+}
+
+.active .content {
+    display: block;
 }
 
 .button.logout button {
@@ -254,5 +262,9 @@ input:focus {
     .title {
         border-bottom: 2px dashed #AAAFB9;
         padding-bottom: 20px;
+    }
+
+    .btn-content i {
+        margin-right: 10px;
     }
 }

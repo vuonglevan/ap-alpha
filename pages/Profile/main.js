@@ -1,8 +1,9 @@
 function setContent() {
     const currentContent = $(this).attr('data-target');
-    $('.js-btn').removeClass('active');
-    $(this).addClass('active');
+    const parent = $(this).parent();
+    $('.row').removeClass('active');
     $('.row').addClass('d-none');
+    parent.addClass('active');
     $(currentContent).removeClass('d-none');
 }
 

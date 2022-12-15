@@ -10,18 +10,21 @@ body {
 }
 
 .modal {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     backdrop-filter: blur(10px);
     background: rgba(0, 20, 50, 0.7);
 }
 
+.modal.active {
+    display: block;
+}
 
 .modal-content {
     background: #FFFFFF;
@@ -38,8 +41,13 @@ body {
 .close {
     position: absolute;
     top: 30px;
-    right: 40px;
+    right: 20px;
     cursor: pointer;
+}
+
+.btn-x {
+    background: transparent;
+    border: none;
 }
 
 .icon {
@@ -51,7 +59,7 @@ body {
 .icon i {
     margin: 65px auto 30px;
     padding: 40px;
-    border-radius: 40px;
+    border-radius: 60px;
     background: linear-gradient(102.14deg, #0867FF 0%, #002D87 100%);
 }
 
@@ -81,23 +89,35 @@ body {
     font-size: 18px;
 }
 
-.button button:nth-child(1) {
+.button button:nth-child(1),
+.button button:nth-child(2) {
     background-color: #AAAFB9;
 }
 
-.button button:nth-child(2) {
+.button button:nth-child(3) {
     background: #0867FF;
 }
 
+.back-mobie {
+    display: none;
+}
 
 @media (max-width: 375px) {
     .modal-content {
-        margin: 50% 15px    ;
+        margin: 50% 15px;
         text-align: center;
         align-items: center;
         vertical-align: middle;
         padding: 15px;
         width: calc(100% - 62px);
+    }
+
+    .back-mobie {
+        display: block;
+    }
+
+    .back {
+        display: none;
     }
 
     .message {
@@ -120,8 +140,8 @@ body {
 
     .icon i {
         margin: 65px auto 25px;
-        padding: 20px;
-        border-radius: 30px;
+        padding: 15px;
+        border-radius: 40px;
         background: linear-gradient(102.14deg, #0867FF 0%, #002D87 100%);
     }
 

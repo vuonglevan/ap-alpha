@@ -27,67 +27,73 @@
             <div class="button logout"><button class=""><i class="fa-solid fa-right-from-bracket"></i>Đăng
                     xuất</button></div>
         </div>
-        <div class="row information" id="information">
-            <button class="js-btn active btn-response" data-target="#information">
-                <div><i class="fa-regular fa-user"></i>Thông tin cá
+        <div class="row information active" id="information">
+            <button class="js-btn btn-response" data-target="#information">
+                <div class="btn-content"><i class="fa-regular fa-user"></i>Thông tin cá
                     nhân</div><i class="fa-solid fa-chevron-down"></i>
             </button>
-            <div class="title">Thông tin cá nhân <span class="required">*</span></div>
-            <form action="">
-                <div class="input-group">
-                    <div class="input">
-                        <label for="name">Tên khách hàng </label>
-                        <input type="text" id="name" value="alexwang@123">
+            <div class="content">
+                <div class="title">Thông tin cá nhân <span class="required">*</span></div>
+                <form action="">
+                    <div class="input-group">
+                        <div class="input">
+                            <label for="name">Tên khách hàng </label>
+                            <input type="text" id="name" value="alexwang@123">
+                        </div>
+                        <div class="input">
+                            <label for="id">Mã khách hàng</label>
+                            <input type="text" id="id" value="203456">
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="id">Mã khách hàng</label>
-                        <input type="text" id="id" value="203456">
+                    <div class="input-group">
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" value="alexwang@gmail.com">
+                        </div>
+                        <div class="input">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="text" id="phone" value="0987654321">
+                        </div>
                     </div>
-                </div>
-                <div class="input-group">
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" value="alexwang@gmail.com">
+                    <div class="input-group">
+                        <div class="input">
+                            <label for="address">Địa chỉ</label>
+                            <input type="text" id="address" value="123 Đường số 2, Phường 25, Quận Bình Thạnh, Tp HCM">
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="phone">Số điện thoại</label>
-                        <input type="text" id="phone" value="0987654321">
-                    </div>
-                </div>
-                <div class="input-group">
-                    <div class="input">
-                        <label for="address">Địa chỉ</label>
-                        <input type="text" id="address" value="123 Đường số 2, Phường 25, Quận Bình Thạnh, Tp HCM">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
         <div class="row change-password d-none" id="change-password">
-            <button class="js-btn btn-response" data-target="#information"><i class="fa-solid fa-pencil"></i>Đổi
-                mật khẩu<i class="fa-solid fa-angle-up"></i></button>
-            <div class="title">Đổi mật khẩu</div>
-            <form action="">
-                <div class="input-group">
-                    <div class="input">
-                        <label for="old_pass">Nhập mật khẩu cũ</label>
-                        <input type="text" id="old_pass" placeholder="Nhập tên ...">
+            <button class="js-btn btn-response" data-target="#change-password">
+                <div class="btn-content"><i class="fa-solid fa-pencil"></i>Đổi
+                    mật khẩu</div><i class="fa-solid fa-angle-up"></i>
+            </button>
+            <div class="content">
+                <div class="title">Đổi mật khẩu</div>
+                <form action="">
+                    <div class="input-group">
+                        <div class="input">
+                            <label for="old_pass">Nhập mật khẩu cũ</label>
+                            <input type="text" id="old_pass" placeholder="Nhập tên ...">
+                        </div>
+                        <div class="input">
+                            <label for="newpass">Mật khẩu mới</label>
+                            <input type="text" id="newpass" placeholder="Nhập tên ...">
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="newpass">Mật khẩu mới</label>
-                        <input type="text" id="newpass" placeholder="Nhập tên ...">
+                    <div class="input-group">
+                        <div class="input">
+                            <label for="confirm-pass">Xác nhận mật khẩu mới</label>
+                            <input type="text" id="confirm-pass" placeholder="Nhập tên ...">
+                        </div>
                     </div>
-                </div>
-                <div class="input-group">
-                    <div class="input">
-                        <label for="confirm-pass">Xác nhận mật khẩu mới</label>
-                        <input type="text" id="confirm-pass" placeholder="Nhập tên ...">
+                    <div class="button">
+                        <button>Hủy</button>
+                        <button>Xác nhận</button>
                     </div>
-                </div>
-                <div class="button">
-                    <button>Hủy</button>
-                    <button>Xác nhận</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
         <div class="row logout-mobie">
             <div class="button logout"><button class=""><i class="fa-solid fa-right-from-bracket"></i>Đăng
